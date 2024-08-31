@@ -5,10 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Battleship</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./styles/styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles.css" />
 </head>
 
 <body>
+ 
+    <div id="info-toggle-btn" class="active">
+    </div>
+        <div id="info" class="active">
+           
+                <p>Battleship Game est un mini jeu javascript qui consiste à retrouver tous les navires
+                positionner sur une grille, il y'a 09 bateaux au total diviser en groupe de 03. dans un groupe, 
+                les navirent sont soit positionner à la verticale, soit à l'horizontale
+                la position des navirent est aléatoire. </p>
+                <p>Pour cibler une cellule il faut entrer la lettre de la ligne et le numéro de la colonne
+                    l'application doit gérer les imprévus (saisie erronée) et dois afficher le nombre 
+                    d'éssais de l'utilisateur
+                </p>
+                <a download="Battleship_Game_Images.zip" href="./assets.zip">Télécharger les assets</a>
+
+  
+        </div>
+  
     <div id="board">
         <div id="messageArea"></div>
         <table>
@@ -81,6 +99,7 @@
             <input type="button" value="Fire!" id="fireButton">
         </form>
     </div>
-    <script src="./scripts/battleship.js" type="text/javascript"></script>  
+    <script src="./info.js"></script>
+    <script src="./battleship.js" type="text/javascript"></script>  
 </body>
 </html>
